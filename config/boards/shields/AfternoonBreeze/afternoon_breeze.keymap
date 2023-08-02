@@ -17,6 +17,19 @@
 #define MACPAD 5
 
 / {
+
+	macros {
+		wpdesk: wpdesk {
+			label = "Win previous desktop";
+			compatible = "zmk, behavior-macro";
+			#binding-cells = <0>;
+			bindings =
+				<&macro_press &kp LCTRL &kp LGUI>,
+				<&macro_tap &kp LEFT>,
+				<&macro_release &kp LCTRL &kp LGUI>;
+		};
+	};
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -72,7 +85,7 @@
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------| |-------|------|-------|
 // | TAB   |     |Vol+ | Mute |      |      |                   |      |      |      |      |       |   ]   | |       |      |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
-// | CAPS  |Prev |Vol- | Next |      |      |                   |      |      |      |      |       |       |         | BT1  |       |
+// | CAPS  |WPDes|Vol- | Next |      |      |                   |      |      |      |      |       |       |         | BT1  |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
 // | LCTRL |     |     |      |      |      |                   |      |      |      |      |       |   -   | | BT2   | BT2  | BT3   |
 //  ---------------- ----------------------------           ----------------------------- -------------------------------------------
@@ -81,7 +94,7 @@
 			bindings = <
 &kp GRAVE &kp F1     &kp F2       &kp F3     &kp F4  &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      &kp F12      &none         &bt BT_CLR
 &trans    &none      &kp C_VOL_UP &kp C_MUTE &none   &none                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
-&kp CAPS  &kp C_PREV &kp C_VOL_DN &kp C_NEXT &none   &none                        &none   &none   &none   &none  &none   &none                     &bt BT_SEL 0
+&kp CAPS  &kp C_PREV &wpdesk      &kp C_NEXT &none   &none                        &none   &none   &none   &none  &none   &none                     &bt BT_SEL 0
 &trans    &none      &none        &none      &none   &none                        &none   &none   &none   &none  &none   &kp MINUS    &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
                                   &none      &trans  &trans  &trans       &trans  &trans  &trans  &to 1
 			>;
