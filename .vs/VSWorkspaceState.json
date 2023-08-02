@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\config",
+    "\\config\\boards",
+    "\\config\\boards\\shields",
+    "\\config\\boards\\shields\\AfternoonBreeze"
   ],
+  "SelectedNode": "\\config\\boards\\shields\\AfternoonBreeze\\afternoon_breeze.conf",
   "PreviewInSolutionExplorer": false
 }
