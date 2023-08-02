@@ -13,14 +13,5 @@ if SHIELD_AFTERNOON_BREEZE_LEFT || SHIELD_AFTERNOON_BREEZE_RIGHT
 
 config ZMK_SPLIT
 	default y
-	
-config ZMK_SLEEP
-	default y
-
-config ZMK_IDLE_TIMEOUT
-	default 180000
-
-config ZMK_IDLE_SLEEP_TIMEOUT
-	default 600000
  
 endif
