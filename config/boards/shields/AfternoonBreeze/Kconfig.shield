@@ -1,8 +1,8 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_AFTERNOON-BREEZE_LEFT
-    def_bool $(shields_list_contains,afternoon-breeze_left)
+config SHIELD_AFTERNOON_BREEZE_LEFT
+    def_bool $(shields_list_contains,afternoon_breeze_left)
 
-config SHIELD_AFTERNOON-BREEZE_RIGHT
-    def_bool $(shields_list_contains,afternoon-breeze_right)
+config SHIELD_AFTERNOON_BREEZE_RIGHT
+    def_bool $(shields_list_contains,afternoon_breeze_right)
