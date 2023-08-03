@@ -8,6 +8,6 @@
     "\\config\\boards\\shields",
     "\\config\\boards\\shields\\AfternoonBreeze"
   ],
-  "SelectedNode": "\\config\\boards\\shields\\AfternoonBreeze\\Kconfig.shield",
+  "SelectedNode": "\\.github\\workflows\\build.yml",
   "PreviewInSolutionExplorer": false
 }
