@@ -108,7 +108,7 @@
 // Ref: https://zmkfirmware.dev/docs/codes/
 
 //  ----------------------------------------                       ------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                     |  6   |  7    |  8    |  9   |   0   |  \   | |BSPAC| HOME | PGUP |
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                     |  6   |  7    |  8    |  9   |   0   |  \   | | INS | HOME | PGUP |
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------| |-----|------|------|
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                     |  Y   |  U    |  I    |  O   |   P   |  [   | | DEL | END  | PGDN |
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
@@ -116,14 +116,14 @@
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
 // | LCTRL |  Z  |  X  |  C   |  V   |  B   |                     |  N   |  M    |  ,    |  .   |   /   |  =   | |LEFT | DOWN |RIGHT |
 //  ---------------- ----------------------------              ------------------------------ ---------------------------------------
-//                  | LGUI | LALT |WINMOD| SPACE |            | SPACE |WINPAD| RALT  | ENTER |
+//                  |WINMOD| LGUI | LALT | SPACE |            |BACKSPC|ENTER | RALT  |WINPAD |
 //                   ----------------------------              ------------------------------
 			bindings = <
-&kp ESC     &kp N1 &kp N2 &kp N3     &kp N4   &kp N5                       &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp BSLH   &kp BSPC &kp HOME  &kp PG_UP
-&kp TAB     &kp Q  &kp W  &kp E      &kp R    &kp T                        &kp Y  &kp U    &kp I     &kp O   &kp P    &kp LBKT   &kp DEL  &kp END   &kp PG_DN
-&kp LSHFT   &kp A  &kp S  &kp D      &kp F    &kp G                        &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp APOS            &kp UP 
-&kp LCTRL   &kp Z  &kp X  &kp C      &kp V    &kp B                        &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp EQUAL  &kp LEFT &kp DOWN  &kp RIGHT
-                          &kp LALT   &mo 2    &kp LGUI &kp SPACE &kp SPACE &mo 4  &kp RALT &kp ENTER
+&kp ESC     &kp N1 &kp N2 &kp N3 &kp N4   &kp N5                          &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp BSLH   &kp INS  &kp HOME  &kp PG_UP
+&kp TAB     &kp Q  &kp W  &kp E  &kp R    &kp T                           &kp Y      &kp U    &kp I     &kp O   &kp P    &kp LBKT   &kp DEL  &kp END   &kp PG_DN
+&kp LSHFT   &kp A  &kp S  &kp D  &kp F    &kp G                           &kp H      &kp J    &kp K     &kp L   &kp SEMI &kp APOS            &kp UP 
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp EQUAL  &kp LEFT &kp DOWN  &kp RIGHT
+                          &mo 2  &kp LGUI &kp LALT &kp SPACE     &kp BSPC &kp ENTER  &kp RALT &mo 4
 			>;
 		};
 
