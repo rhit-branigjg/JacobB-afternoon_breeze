@@ -114,16 +114,16 @@
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
 // |  TAB  |  A  |  R  |  S   |  T   |  D   |                     |  H   |  N    |  E    |  I   |   ;   |  '   |       |  UP  |      |
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
-// | CAPS  |  Z  |  X  |  C   |  V   |  B   |                     |  K   |  M    |  ,    |  .   |   /   | RALT | |LEFT | DOWN |RIGHT |
+// | CAPS  |  Z  |  X  |  C   |  V   |  B   |                     |  K   |  M    |  ,    |  .   |   /   | RALT   | |LEFT | DOWN |RIGHT |
 //  ---------------- ----------------------------              ------------------------------ ---------------------------------------
-//                  |WINMOD| LGUI | LALT | SPACE |            |SHIFT |ENTER | RALT  |WINPAD |
+//                  |LOWER| LGUI | LALT | SPACE |            |SHIFT |ENTER | RALT  |WINPAD |
 //                   ----------------------------              ------------------------------
 			bindings = <
-&kp ESC     &kp N1 &kp N2 &kp N3 &kp N4   &kp N5                          &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp BSLH   &kp INS  &kp HOME  &kp PG_UP
-&kp ESC     &kp Q  &kp W  &kp F  &kp P    &kp G                           &kp J      &kp L    &kp U     &kp P   &kp SEMI &kp LBKT   &kp DEL  &kp END   &kp PG_DN
+&kp ESC     &kp N1 &kp N2 &kp N3 &kp N4   &kp N5                          &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &tog 3   &kp INS  &kp HOME  &kp PG_UP
+&kp ESC     &kp Q  &kp W  &kp F  &kp P    &kp G                           &kp J      &kp L    &kp U     &kp P   &kp SEMI &kp DEL   &kp DEL  &kp END   &kp PG_DN
 &kp TAB     &kp A  &kp R  &kp S  &kp T    &kp D                           &kp H      &kp N    &kp E     &kp I   &kp O    &kp APOS            &kp UP 
 &kp CAPS    &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp K      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RALT  &kp LEFT &kp DOWN  &kp RIGHT
-                          &mo 2  &kp LGUI &kp LCTRL &kp SPACE     &kp LSHIFT &kp ENTER  &kp RALT &mo 4
+                          &mo 4  &kp LGUI &kp LCTRL &kp SPACE     &kp LSHIFT &kp BSPC  &kp RET &mo 2
 			>;
 		};
 
@@ -176,16 +176,16 @@
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------| |-------|------|-------|
 // | TAB   |mwcyc|Vol+ | Mute |      |      |                   |      |      |      |      |       |   ]   | |       |      |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
-// | CAPS  |MPDes|Vol- |MNDes |      |      |                   |      |      |      |      |       |       |         | BT0  |       |
+// | CAPS  |MPDes|Vol- |MNDes |      |      |                   |      |   X  |      |      |       |       |         | BT0  |       |
 // |-------|-----|-----|------|------|------|                   |------|------|------|------|-------|-------|  -------|------|------ |
 // | LGUI  |     |     |      |      |      |                   |      |      |      |      |       |   -   | | BT1   | BT2  | BT3   |
 //  ---------------- ----------------------------           ----------------------------- -------------------------------------------
 //                  |      |LCTRL | LALT | SPACE |         | BSPACE |ENTER | RALT | WIN  |
 //                   ----------------------------           -----------------------------
 			bindings = <
-&kp GRAVE &kp F1   &kp F2       &kp F3     &kp F4     &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      &kp F12      &none         &bt BT_CLR
+&kp GRAVE &kp F1   &kp F2       &kp F3     &kp F4     &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &tog 3      &kp F12      &none         &bt BT_CLR
 &trans    &mwcycle &kp C_VOL_UP &kp C_MUTE &none      &none                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
-&kp CAPS  &mpdesk  &kp C_VOL_DN &mndesk    &none      &none                        &none   &none   &none   &none  &none   &none                     &bt BT_SEL 0
+&kp CAPS  &mpdesk  &kp C_VOL_DN &mndesk    &none      &none                        &none   & X     &none   &none  &none   &none                     &bt BT_SEL 0
 &kp LGUI  &none    &none        &none      &none      &none                        &none   &none   &none   &none  &none   &kp MINUS    &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
                                 &none      &kp LCTRL  &trans  &trans       &trans  &trans  &trans  &to 0
 			>;
