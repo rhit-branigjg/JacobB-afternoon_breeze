@@ -183,11 +183,11 @@
 //                  |      |LCTRL | LALT | SPACE |         | BSPACE |ENTER | RALT | WIN  |
 //                   ----------------------------           -----------------------------
 			bindings = <
-&kp GRAVE &kp F1  &kp F2   &kp F3  &kp F4  &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &tog 3      &kp F12      &none         &bt BT_CLR
-&trans    &wsshot &kp Q    &kp W   &kp E   &kp R                        &none   &none   &none   &none  &none   &kp RBKT     &none        &none         &none
-&kp CAPS  &wpdesk &kp A    &kp S   &kp D   &kp F                        &none   &none   &none   &none  &none   &none                     &bt BT_SEL 0
-&trans    &kp Z   &kp X    &kp C   &kp V   &kp B                        &none   &none   &none   &none  &none   &kp MINUS    &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
-                               &mo 2  &kp LGUI &kp LCTRL &kp SPACE     &kp BSPC &kp LSHIFT  &kp ENTER &mo 4
+&kp GRAVE &kp N1    &kp N2 &kp N3 &kp N4   &kp N5                         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0 &tog 3      &kp F12      &none         &bt BT_CLR
+&trans    &kp TAB   &kp Q    &kp W   &kp E   &kp R                        &none   &none   &none   &none   &none   &kp RBKT     &none        &none         &none
+&kp CAPS  &kp LSHFT &kp A    &kp S   &kp D   &kp F                        &none   &none   &none   &none  &none   &none                     &bt BT_SEL 0
+&trans    &kp Z     &kp X    &kp C   &kp V   &kp B                        &none   &none   &none   &none  &none   &kp MINUS    &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
+                      &mo 2  &kp LGUI &kp LCTRL &kp SPACE         &kp BSPC &kp LSHIFT  &kp ENTER &mo 4
 			>;
 		};
 
