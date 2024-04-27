@@ -123,7 +123,7 @@
 &kp ESC     &kp Q  &kp W  &kp F  &kp P    &kp G                           &kp J      &kp L    &kp U     &kp P   &kp SEMI &kp LBKT   &kp DEL  &kp END   &kp PG_DN
 &kp TAB     &kp A  &kp R  &kp S  &kp T    &kp D                           &kp H      &kp N    &kp E     &kp I   &kp O    &kp APOS            &kp UP 
 &kp CAPS    &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp K      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RALT  &kp LEFT &kp DOWN  &kp RIGHT
-                          &mo 2  &kp LGUI &kp LCTRL &kp SPACE     &kp LSHIFT &kp ENTER  &kp RALT &mo 4
+                          &mo 2  &kp LGUI &kp LCTRL &kp SPACE     &kp LSHIFT &kp BSPC  &kp ENTER &mo 4
 			>;
 		};
 
