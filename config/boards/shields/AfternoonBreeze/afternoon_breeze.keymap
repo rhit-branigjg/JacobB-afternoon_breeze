@@ -112,18 +112,18 @@
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------| |-----|------|------|
 // |  TAB  |  Q  |  W  |  F   |  P   |  G   |                     |  J   |  L    |  U    |  P   |   ;   |  [   | | DEL | END  | PGDN |
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
-// | SHIFT |  A  |  R  |  S   |  T   |  D   |                     |  H   |  N    |  E    |  I   |   ;   |  '   |       |  UP  |      |
+// |  TAB  |  A  |  R  |  S   |  T   |  D   |                     |  H   |  N    |  E    |  I   |   ;   |  '   |       |  UP  |      |
 // |-------|-----|-----|------|------|------|                     |------|-------|-------|------|-------|------|  -----|------|----- |
-// | LCTRL |  Z  |  X  |  C   |  V   |  B   |                     |  K   |  M    |  ,    |  .   |   /   |  =   | |LEFT | DOWN |RIGHT |
+// | CAPS  |  Z  |  X  |  C   |  V   |  B   |                     |  K   |  M    |  ,    |  .   |   /   | RALT | |LEFT | DOWN |RIGHT |
 //  ---------------- ----------------------------              ------------------------------ ---------------------------------------
-//                  |WINMOD| LGUI | LALT | SPACE |            |BACKSPC|ENTER | RALT  |WINPAD |
+//                  |WINMOD| LGUI | LALT | SPACE |            |SHIFT |ENTER | RALT  |WINPAD |
 //                   ----------------------------              ------------------------------
 			bindings = <
 &kp ESC     &kp N1 &kp N2 &kp N3 &kp N4   &kp N5                          &kp N6     &kp N7   &kp N8    &kp N9  &kp N0   &kp BSLH   &kp INS  &kp HOME  &kp PG_UP
-&kp TAB     &kp Q  &kp W  &kp F  &kp P    &kp G                           &kp J      &kp L    &kp U     &kp P   &kp SEMI &kp LBKT   &kp DEL  &kp END   &kp PG_DN
-&kp LSHFT   &kp A  &kp R  &kp S  &kp T    &kp D                           &kp H      &kp N    &kp E     &kp I   &kp O    &kp APOS            &kp UP 
-&kp LCTRL   &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp K      &kp M    &kp COMMA &kp DOT &kp FSLH &kp EQUAL  &kp LEFT &kp DOWN  &kp RIGHT
-                          &mo 2  &kp LGUI &kp LALT &kp SPACE     &kp BSPC &kp ENTER  &kp RALT &mo 4
+&kp ESC     &kp Q  &kp W  &kp F  &kp P    &kp G                           &kp J      &kp L    &kp U     &kp P   &kp SEMI &kp LBKT   &kp DEL  &kp END   &kp PG_DN
+&kp TAB     &kp A  &kp R  &kp S  &kp T    &kp D                           &kp H      &kp N    &kp E     &kp I   &kp O    &kp APOS            &kp UP 
+&kp CAPS    &kp Z  &kp X  &kp C  &kp V    &kp B                           &kp K      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RALT  &kp LEFT &kp DOWN  &kp RIGHT
+                          &mo 2  &kp LGUI &kp LCTRL &kp SPACE     &kp LSHIFT &kp ENTER  &kp RALT &mo 4
 			>;
 		};
 
