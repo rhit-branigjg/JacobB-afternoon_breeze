@@ -119,10 +119,10 @@
 		winmod_layer {
 
 			bindings = <
-&kp C_MUTE 	&kp C_VOL_DN  	&kp C_VOL_UP	&tog 2    &kp F1  &kp F2       &kp F3     &kp F4  &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      
-&kp C_PREV  &kp C_PP   		&kp C_NEXT		&trans    &wsshot &kp C_VOL_UP &kp Z &none   &none                       	   &none   &none   &none   &none  &none   &kp RBKT  
-		  	&kp UP 							&kp CAPS  &wpdesk &kp C_VOL_DN &wndesk    &none   &none                        &none   &none   &none   &none  &none   &none     
-&kp LEFT  	&kp DOWN   		&kp RIGHT		&trans    &none   &none        &none      &none   &none                        &none   &none   &none   &none  &none   &kp MINUS   
+&kp C_MUTE 	&kp C_VOL_DN  &kp C_VOL_UP	&tog 2    &kp F1  &kp F2       &kp F3     &kp F4  &kp F5                       &kp F6  &kp F7  &kp F8  &kp F9 &kp F10 &kp F11      
+&kp C_PREV  &kp C_PP   	  &kp C_NEXT	&trans    &wsshot &kp C_VOL_UP &kp Z &none   &none                       	   &none   &none   &none   &none  &none   &kp F12 
+		  	&kp PG_UP 					&kp CAPS  &wpdesk &kp C_VOL_DN &wndesk    &none   &none                        &none   &none   &none   &none  &none   &none     
+&none  	    &kp PG_DN     &none		    &trans    &none   &none        &none      &none   &none                        &none   &none   &none   &none  &none   &none   
                              								 			 &none   &trans  &trans  &trans   		    &trans  &trans  &trans  &to 1
 			>;
 		};
